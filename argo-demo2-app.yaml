@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+ name: argo-demo2
+spec:
+ destination:
+   name: argo-prod
+   namespace: ''
+   server: ''
+ source:
+   path: apps
+   repoURL: 'https://github.com/louiscbrooks23/argo-demo2'
+   targetRevision: HEAD
+   directory:
+     recurse: true
+ sources: []
+ project: default
