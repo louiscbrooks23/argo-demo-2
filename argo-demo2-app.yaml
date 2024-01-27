@@ -5,7 +5,7 @@ metadata:
 spec:
  destination:
    name: argo-prod
-   namespace: 'default'
+   namespace: 'argocd'
    server: ''
  source:
    path: apps
